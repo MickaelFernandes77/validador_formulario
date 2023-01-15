@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nos envie uma mensagem, bastando preenhcer o formulário.">
+    <title>Formulário de Mensagem</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Link do Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="contactsContainer">
+                    <section class="col-md-4">
+                        <i class="fa-solid fa-location-dot icon adress"></i>
+                        <p class="contactTitle">Endereço:</p>
+                        <p class="contactText">Rua José Amadeu, 603. São Paulo - Brasil</p>
+                    </section>
+
+                    <section class="col-md-4">
+                        <i class="fa-solid fa-phone icon phone"></i>
+                        <p class="contactTitle">Telefone:</p>
+                        <p class="contactText">(11) 97048-4620</p>
+                    </section>
+
+                    <section class="col-md-4">
+                        <i class="fa-regular fa-paper-plane icon mail"></i>
+                        <p class="contactTitle">E-Mail:</p>
+                        <p class="contactText mailText">mickaelbpsouza@gmail.com</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <section class="formContainer col-12">
+                    <h1 class="text-center" id="formTitle">Me Envie uma Mensagem</h1>
+
+                    <form action="#">
+                        <div class="formC">
+                            <input type="name" class="input" id="name" placeholder="Nome">
+                            <small>Error Message</small>
+                        </div>
+
+                        <div class="formC">
+                            <input type="email" class="input" id="email" placeholder="E-mail">
+                            <small>Error Message</small>
+                        </div>
+
+                        <div class="formC">
+                            <input type="text" class="input" id="text" placeholder="Mensagem">
+                            <small>Error Message</small>
+                        </div>
+
+                        <button class="messageBtn" onclick="validation()">Enviar Mensagem</button>
+                    </form>
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
